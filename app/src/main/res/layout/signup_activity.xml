@@ -90,7 +90,7 @@
         android:layout_marginBottom="10dp"
         android:text="Already have an account?"
         android:textAlignment="center"
-        android:textColor="#AA95E6" />
+        android:textColor="#bebebe" />
 
     <TextView
         android:id="@+id/login"
