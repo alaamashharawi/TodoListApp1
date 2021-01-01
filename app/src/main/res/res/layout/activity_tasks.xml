@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary2"
+    android:gravity="top"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".TasksActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:weightSum="12">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingVertical="10dp"
+            android:id="@+id/back"
+            android:layout_weight="1"
+            android:src="@drawable/back_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lists ToDo"
+            android:layout_weight="9"
+            android:textAlignment="center"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/logout"
+            android:text="@string/logout"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search"
+            android:id="@+id/search"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_edit_text"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:drawableTint="@color/grey"
+            android:drawableLeft="@drawable/ic_search"
+            android:layout_gravity="top"
+            android:layout_marginBottom="50dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal List"
+                android:id="@+id/category"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="left"
+                android:layout_marginBottom="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/delete"
+                android:textSize="22sp"
+                android:layout_marginTop="5dp"
+                android:text="Delete"/>
+        </FrameLayout>
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Create new task here"
+            android:id="@+id/create"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_edit_text"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:drawableLeft="@drawable/ic_plus"
+            android:textColorHint="@color/grey"
+            android:drawableTint="@color/grey"
+            android:layout_gravity="top"
+            android:layout_marginBottom="35dp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tasks_rv"></androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginBottom="20dp"
+        android:text="Create profile to start your first ToDo List"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="your name"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Password"
+        android:textColorHint="@color/grey"
+        android:drawableTint="@color/grey"
+        android:inputType="textPassword"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/white"
+    />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Your email address"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:drawableTint="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_gradient"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="10dp"
+            android:text="Create your profile" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Already have an account?"
+        android:textAlignment="center"
+        android:textColor="#AA95E6" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Log In"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+</LinearLayout>
